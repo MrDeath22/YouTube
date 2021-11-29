@@ -407,7 +407,6 @@ img {
 }
 
 .container {
-  max-width: 1400px;
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
@@ -659,6 +658,120 @@ img {
   margin-bottom: 16px;
 }
 
+.header__account .account__item .user {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 450px;
+  left: -124px;
+  display: none;
+  width: 350px;
+  padding: 20px 0;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.header__account .account__item .user__titles {
+  padding: 0 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E1E1E1;
+}
+
+.header__account .account__item .user__img {
+  width: 48px;
+  height: 48px;
+  margin-right: 30px;
+}
+
+.header__account .account__item .user__name {
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.header__account .account__item .user__desc {
+  color: #1F3ACA;
+}
+
+.header__account .account__item .user__list {
+  padding: 20px 30px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.header__account .account__item .user__item:not(:last-child) {
+  margin-bottom: 25px;
+}
+
+.header__account .account__item .user__item-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #000;
+}
+
+.header__account .account__item .user__item-link i {
+  font-size: 23px;
+  margin-right: 20px;
+}
+
+.header__account .account__item .user__txt {
+  padding: 20px;
+  padding-bottom: 0;
+  color: #000;
+}
+
+.header__account .account__item .user .dl-mode {
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 82px;
+  left: -57%;
+  display: none;
+  width: 270px;
+  padding: 15px 0;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+          box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
+.header__account .account__item .user .dl-mode .inner {
+  padding: 0 20px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.header__account .account__item .user .dl-mode .inner__btn i {
+  font-size: 20px;
+  margin-right: 20px;
+  color: #000;
+}
+
+.header__account .account__item .user .dl-mode .titles {
+  padding: 15px 20px;
+  padding-bottom: 0;
+}
+
+.header__account .account__item .user .dl-mode .titles__desc {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.header__account .account__item .user .dl-mode .titles__txt {
+  display: block;
+}
+
+.header__account .account__item .user .dl-mode .titles__txt:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.header__account .account__item .user .dl-mode .titles__txt i {
+  margin-right: 15px;
+}
+
 .open {
   display: block !important;
 }
@@ -708,7 +821,6 @@ img {
 .nav__item {
   font-size: 18px;
   padding: 10px 20px;
-  padding-left: 30%;
   cursor: pointer;
   -webkit-transition: background 0.12s ease;
   transition: background 0.12s ease;

@@ -95,3 +95,35 @@ function showNotfl(e) {
 }
 
 // NOTFILICATION BTN ----------------------------------------- //
+
+// USER BTN
+
+let userBtn = document.querySelector('.account__user-btn');
+let userAdd = document.querySelector('.user');
+
+userBtn.addEventListener('click', showUser);
+
+function showUser(e) {
+   userAdd.classList.toggle('open');
+}
+
+// USER BTN ----------------------------------------- //
+
+// DARK LIGHT BTN
+
+let dlBtn = document.querySelector('.dl__btn');
+let dlAdd = document.querySelector('.dl-mode');
+let dlBreak = document.querySelector('.inner__btn');
+
+dlBtn.addEventListener('click', showDl);
+dlBreak.addEventListener('click', breakDl);
+
+function showDl(e) {
+   dlAdd.classList.toggle('open');
+}
+
+function breakDl(e) {
+   dlAdd.className = 'dl-mode';
+}
+
+// DARK LIGHT BTN ----------------------------------------- //
