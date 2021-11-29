@@ -1,0 +1,81 @@
+.nav {
+   display: block;
+   width: 270px !important;
+   padding: 20px 0;
+
+   &__item {
+      font-size: 18px;
+      padding: 10px 20px;
+      padding-left: 30%;
+      cursor: pointer;
+      transition: background 0.12s ease;
+
+      &--active {
+         font-weight: 700;
+         color: #000;
+         background: #c4c4c4;
+
+         i {
+            color: $cl-primary;
+         }
+      }
+
+      &:hover {
+         background: #c4c4c4;
+      }
+
+      i {
+         margin-right: 25px;
+      }
+   }
+}
+
+.nav-sc {
+   display: none;
+   width: 60px !important;
+   padding: 10px 0;
+
+   &__item {
+      text-align: center;
+      font-size: 12px;
+      padding: 15px 0;
+
+      &--active {
+         color: $cl-primary;
+
+         i {
+            color: $cl-primary;
+         }
+      }
+
+      i {
+         display: block;
+         font-size: 20px;
+         margin-bottom: 5px;
+      }
+   }
+}
+
+@include breakpoint-down(1380px) {
+   .nav {
+      width: 240px !important;
+   } 
+   .nav__item {
+      padding-left: 20px;
+   }
+}
+
+@include breakpoint-down($max-lg) {
+   .nav-sc {
+      width: 5%;
+   }
+}
+
+@include breakpoint-down($max-md) {
+   .nav {
+      display: none;
+   }
+   .nav-sc {
+      display: block;
+   }
+}

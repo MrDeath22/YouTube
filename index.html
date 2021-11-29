@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+   <!-- Short icon -->
+   <link rel="shortcut icon" href="https://cdn-icons.flaticon.com/png/512/15/premium/15476.png?token=exp=1637940272~hmac=907a9bb61d21e2d1bad1b35c9a0ceaf3" type="image/x-icon">
+   <!-- Font Awesome -->
+   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+   <!-- CSS Files -->
+   <link rel="stylesheet" href="./css/flex-box.css">
+   <link rel="stylesheet" href="./css/global.css">
+   <link rel="stylesheet" href="./css/main.min.css">
+   <title> TITLE </title>
+</head>
+<body>
+
+   <header id="header" class="header">
+
+      <div class="header__container container">
+         <div class="header__inner row between align-center">
+            <div class="header__menu row align-center">
+               <button class="header__menu-btn menu__btn"><i class="fas fa-bars"></i></button>
+               <button class="menu menu__btn"><i class="fas fa-bars"></i></button>
+               <a class="header__logo" href="index.html">
+                  <img class="header__logo-img" src="./img/logo.svg" alt="logo">
+                  <img class="header__logo-img logo-img__dark" src="./img/logo-dark.svg" alt="logo">
+               </a>
+            </div>
+
+            <form class="header__form form row align-center relative-p">
+               <label>
+                  <input class="form__inp" type="search" name="search" placeholder="Search">
+               </label>
+               <div class="form__btns">
+                  <button class="form__btn"><i class="fas fa-search"></i></button>
+                  <span class="form__voice-btn"><i class="fas fa-microphone"></i></span>
+                  <div class="voice__inner">
+                     <span class="voice__inner-btn"><i class="fal fa-times"></i></span>
+                     <span class="voice__inner-txt">Listening...</span>
+                     <span class="voice__inner-voice"><i class="fas fa-microphone"></i></span>
+                  </div>
+               </div>
+            </form>
+
+            <ul class="header__account account account__list row between align-center">
+               <li class="account__item" style="display: none;">
+                  <button class="account__search-btn"><i class="fal fa-search"></i></button>
+               </li>
+               <li class="account__item">
+                  <button class="account__video-btn"><i class="fad fa-video-plus"></i></button>
+                  <div class="video">
+                     <a class="video__link" href="#">
+                        <i class="fab fa-youtube"></i>
+                        Upload Video
+                     </a>
+                     <a class="video__link" href="#">
+                        <i class="fal fa-external-link"></i>
+                        Go live
+                     </a>
+                  </div>
+               </li>
+               <li class="account__item">
+                  <button class="account__tube-btn"><i class="fas fa-th"></i></button>
+                  <div class="tube">
+                     <a class="tube__link tube__link--bor" href="#">
+                        <i class="fab fa-youtube"></i>
+                        YouTube TV
+                     </a>
+                     <a class="tube__link" href="#">
+                        <i class="fab fa-youtube"></i>
+                        YouTube Music   
+                     </a>
+                     <a class="tube__link tube__link--bor" href="#">
+                        <i class="fab fa-youtube"></i>
+                        YouTube Kids   
+                     </a>
+                     <a class="tube__link" href="#">
+                        <i class="fab fa-youtube"></i>
+                        Creators Academy   
+                     </a>
+                     <a class="tube__link" href="#">
+                        <i class="fab fa-youtube"></i>
+                        YouTube for Artists    
+                     </a>
+                  </div>
+               </li>
+               <li class="account__item">
+                  <button class="account__notfl-btn"><i class="fas fa-bell"></i></button>
+                  <div class="notfl">
+                     <div class="notfl__txts row between align-center">
+                        <span class="notfl__txt">Notifications</span>
+                        <button class="notfl__btn"><i class="fas fa-cog"></i></button>
+                     </div>
+                     <div class="notfl__titles">
+                        <i class="fas fa-bell"></i>
+                        <span class="notfl__title"> Your notifications live here</span>
+                        <p class="notfl__desc">Subscribe to your favourite channels to recieve notifications about their latest videos</p>
+                     </div>
+                  </div>
+               </li>
+               <li class="account__item">
+                  <button class="account__user-btn"><img src="./img/user.png" alt="user"></button>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+   </header>
+
+   <div class="header-nav nav">
+
+      <div class="nav__inner">
+         <ul class="nav__list">
+            <li class="nav__item nav__item--active">
+               <i class="fas fa-home-lg"></i>
+               Home
+            </li>
+            <li class="nav__item">
+               <i class="fas fa-compass"></i>
+               Explore
+            </li>
+            <li class="nav__item">
+               <i class="fab fa-youtube"></i>
+               Subscriptions
+            </li>
+            <li class="nav__item">
+               <i class="fad fa-play"></i>
+               History
+            </li>
+            <li class="nav__item">
+               <i class="fas fa-history"></i>
+               Library
+            </li>
+            <li class="nav__item">
+               <i class="fas fa-play-circle"></i>
+               Your Videos
+            </li>
+            <li class="nav__item">
+               <i class="fas fa-clock"></i>
+               Watch Later
+            </li>
+            <li class="nav__item">
+               <i class="fas fa-thumbs-up"></i>
+               Liked Videos
+            </li>
+         </ul>
+      </div>
+
+   </div>
+
+   <div class="header-nav__sc nav-sc">
+
+      <div class="nav-sc__inner">
+         <ul class="nav-sc__list">
+            <li class="nav-sc__item nav-sc__item--active">
+               <i class="fas fa-home-lg"></i>
+               Home
+            </li>
+            <li class="nav-sc__item">
+               <i class="fas fa-compass"></i>
+               Explore
+            </li>
+            <li class="nav-sc__item">
+               <i class="fab fa-youtube"></i>
+               Subscript
+            </li>
+            <li class="nav-sc__item">
+               <i class="fad fa-play"></i>
+               Library
+            </li>
+         </ul>
+      </div>
+
+   </div>
+
+   <footer id="footer" class="footer">
+
+      <!-- code here -->
+
+   </footer>
+
+   <!-- JS File -->
+   <script src="./js/main.js"></script>
+   
+</body>
+</html>
